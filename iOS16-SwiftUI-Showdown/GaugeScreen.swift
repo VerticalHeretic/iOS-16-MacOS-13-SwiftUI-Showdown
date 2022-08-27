@@ -9,17 +9,16 @@ import SwiftUI
 
 struct GaugeScreen: View {
     var feature: Feature
-    @State private var progress = 0.0
+    @State private var progress: Double = 0
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+
     var body: some View {
         VStack {
             Text(feature.description)
                 .font(.footnote)
                 .padding()
                 .multilineTextAlignment(.center)
-            
-            
+
             Gauge(value: progress) {
                 Text("Task progress")
                     .font(.title)
@@ -34,8 +33,7 @@ struct GaugeScreen: View {
                     .font(.footnote)
             }
             .padding()
-            
-            
+
             Gauge(value: progress) {
                 Text("Status")
                     .font(.footnote)
@@ -46,8 +44,7 @@ struct GaugeScreen: View {
             .padding()
             .gaugeStyle(.accessoryCircularCapacity)
             .tint(.orange)
-         
-         
+
             Gauge(value: progress) {
                 Text("Status")
                     .font(.footnote)
@@ -59,7 +56,7 @@ struct GaugeScreen: View {
             .padding()
             .gaugeStyle(.accessoryCircular)
             .tint(.indigo)
-            
+
             Gauge(value: progress) {
                 Text("Status")
                     .font(.footnote)
@@ -70,9 +67,9 @@ struct GaugeScreen: View {
             .padding()
             .gaugeStyle(.accessoryLinearCapacity)
             .tint(.pink)
-            
+
             Spacer()
-           
+
         }
         .onReceive(timer) { _ in
             if progress < 1.0 {
@@ -81,8 +78,7 @@ struct GaugeScreen: View {
                 }
             }
         }
-            
-        
+
         .navigationTitle(feature.title)
         .navigationBarTitleDisplayMode(.inline)
     }

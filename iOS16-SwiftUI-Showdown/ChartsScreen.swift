@@ -44,7 +44,7 @@ final class ChartsViewModel: ObservableObject {
         Developer(name: "Robert", seniority: 6.0),
         Developer(name: "Kacper", seniority: 1)
     ]
-    
+
     @Published var scoresA: [Score] = [
         Score(date: Calendar.current.date(byAdding: .day, value: 0, to: Date())!, value: 21),
         Score(date: Calendar.current.date(byAdding: .day, value: 1, to: Date())!, value: 37),
@@ -52,7 +52,7 @@ final class ChartsViewModel: ObservableObject {
         Score(date: Calendar.current.date(byAdding: .day, value: 3, to: Date())!, value: 211),
         Score(date: Calendar.current.date(byAdding: .day, value: 4, to: Date())!, value: 2137)
     ]
-    
+
     @Published var scoresB: [Score] = [
         Score(date: Calendar.current.date(byAdding: .day, value: 0, to: Date())!, value: 21),
         Score(date: Calendar.current.date(byAdding: .day, value: 2, to: Date())!, value: 1111),
@@ -66,7 +66,7 @@ final class ChartsViewModel: ObservableObject {
 struct ChartsScreen: View {
     var feature: Feature
     @StateObject var viewModel = ChartsViewModel()
-    
+
     var body: some View {
         VStack {
             Text(feature.description)
@@ -74,7 +74,7 @@ struct ChartsScreen: View {
                 .padding()
                 .multilineTextAlignment(.center)
             Spacer()
-            
+
             HStack {
                 Button {
                     withAnimation {
@@ -87,7 +87,7 @@ struct ChartsScreen: View {
                         .background(.green)
                         .cornerRadius(10)
                 }
-                
+
                 Button {
                     withAnimation {
                         viewModel.team = viewModel.team.shuffled()
@@ -100,7 +100,7 @@ struct ChartsScreen: View {
                         .cornerRadius(10)
                 }
             }
-            
+
             ScrollView {
                 barChart
                 lineChart
@@ -110,7 +110,7 @@ struct ChartsScreen: View {
         .navigationTitle(feature.title)
         .navigationBarTitleDisplayMode(.inline)
     }
-    
+
     var lineChart: some View {
         Chart {
             ForEach(viewModel.scoresA) {
@@ -125,12 +125,12 @@ struct ChartsScreen: View {
 //                         y: .value("Score B", $0.value))
 //                .foregroundStyle(.red)
 //            }
-            
+
             RuleMark(
                 y: .value("Mid Threshold", 1000)
             )
             .foregroundStyle(.green)
-            
+
             RuleMark(
                 y: .value("Pro Threshold", 2000)
             )
@@ -138,7 +138,7 @@ struct ChartsScreen: View {
         }
         .frame(height: 400)
     }
-    
+
     var barChart: some View {
         Chart(viewModel.team) {
             BarMark(x: .value("Developer Name", $0.name),
@@ -147,7 +147,7 @@ struct ChartsScreen: View {
         }
         .frame(height: 400)
     }
-    
+
     var areaChart: some View {
         Chart(viewModel.scoresA) {
             AreaMark(x: .value("Date", $0.date),

@@ -21,7 +21,7 @@ struct Feature: Identifiable, Hashable {
 
 final class ContentViewModel: ObservableObject {
     @Published var navigationPath = NavigationPath()
-    
+
     var features: [Feature] = [
         Feature(title: "Charts 📊",
                       description: "Use a chart to build expressive and dynamic data visualizations inside a SwiftUI view.",
@@ -30,7 +30,7 @@ final class ContentViewModel: ObservableObject {
                 description: "SwiftUI introduces a new view called Gauge for displaying progress. In the most basic form, a gauge has a default range from 0 to 1.",
                 type: .gauge)
     ]
-    
+
     func showFeature(_ feature: Feature) {
         navigationPath.append(feature)
     }
@@ -38,7 +38,7 @@ final class ContentViewModel: ObservableObject {
 
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
-    
+
     var body: some View {
         NavigationStack(path: $viewModel.navigationPath) {
             ScrollView {

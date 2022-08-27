@@ -10,19 +10,19 @@ import SwiftUI
 struct FeatureCell: View {
     var feature: Feature
     var onTap: () -> Void
-    
+
     var body: some View {
         VStack {
             HStack {
-                VStack(alignment: .leading){
+                VStack(alignment: .leading) {
                     Text(feature.title)
                         .font(.title)
                     Text(feature.description)
                         .font(.footnote)
                 }
-                
+
                 Spacer()
-                
+
                 Image(systemName: "chevron.right")
                     .padding()
                     .background(.ultraThinMaterial)
@@ -40,7 +40,7 @@ struct FeatureCell: View {
 struct FeatureCell_Previews: PreviewProvider {
     static var previews: some View {
         FeatureCell(feature: Feature(title: "Charts", description: "Those are charts", type: .charts)) {
-            
+
         }
     }
 }
