@@ -53,7 +53,7 @@ struct ContentView: View {
                         case .charts:
                             ChartsScreen(feature: feature)
                         case .gauge:
-                            Text(feature.title)
+                            GaugeScreen(feature: feature)
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")

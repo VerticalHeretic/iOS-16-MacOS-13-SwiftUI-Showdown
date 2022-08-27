@@ -13,6 +13,7 @@
 		A072717E28BA4B1400D354DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A072717D28BA4B1400D354DC /* Preview Assets.xcassets */; };
 		A072718628BA768900D354DC /* ChartsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718528BA768900D354DC /* ChartsScreen.swift */; };
 		A072718828BA779C00D354DC /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718728BA779C00D354DC /* FeatureCell.swift */; };
+		A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718928BA8CAA00D354DC /* GaugeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A072717D28BA4B1400D354DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A072718528BA768900D354DC /* ChartsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsScreen.swift; sourceTree = "<group>"; };
 		A072718728BA779C00D354DC /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		A072718928BA8CAA00D354DC /* GaugeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				A072717528BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift */,
 				A072718528BA768900D354DC /* ChartsScreen.swift */,
+				A072718928BA8CAA00D354DC /* GaugeScreen.swift */,
 				A072717728BA4B1300D354DC /* ContentView.swift */,
 				A072717928BA4B1400D354DC /* Assets.xcassets */,
 				A072717B28BA4B1400D354DC /* iOS16_SwiftUI_Showdown.entitlements */,
@@ -148,6 +151,7 @@
 				A072718828BA779C00D354DC /* FeatureCell.swift in Sources */,
 				A072718628BA768900D354DC /* ChartsScreen.swift in Sources */,
 				A072717828BA4B1300D354DC /* ContentView.swift in Sources */,
+				A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */,
 				A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

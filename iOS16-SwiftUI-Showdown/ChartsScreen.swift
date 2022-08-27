@@ -14,10 +14,14 @@ struct Developer: Identifiable {
     let seniority: Double
 }
 
-struct ChartsScreen: View {
-    var feature: Feature
-    
-    @State var team: [Developer] = [
+struct Score: Identifiable {
+    let id: UUID = UUID()
+    let date: Date
+    let value: Double
+}
+
+final class ChartsViewModel: ObservableObject {
+    @Published var team: [Developer] = [
         Developer(name: "Łukasz", seniority: 2.5),
         Developer(name: "Wiktor", seniority: 3.5),
         Developer(name: "Maciek", seniority: 6),
@@ -37,8 +41,31 @@ struct ChartsScreen: View {
         Developer(name: "Miłosz", seniority: 6.3),
         Developer(name: "Rafał", seniority: 6.7),
         Developer(name: "Tomek", seniority: 6.9),
-        Developer(name: "Robert", seniority: 6.0)
+        Developer(name: "Robert", seniority: 6.0),
+        Developer(name: "Kacper", seniority: 1)
     ]
+    
+    @Published var scoresA: [Score] = [
+        Score(date: Calendar.current.date(byAdding: .day, value: 0, to: Date())!, value: 21),
+        Score(date: Calendar.current.date(byAdding: .day, value: 1, to: Date())!, value: 37),
+        Score(date: Calendar.current.date(byAdding: .day, value: 2, to: Date())!, value: 69),
+        Score(date: Calendar.current.date(byAdding: .day, value: 3, to: Date())!, value: 211),
+        Score(date: Calendar.current.date(byAdding: .day, value: 4, to: Date())!, value: 2137)
+    ]
+    
+    @Published var scoresB: [Score] = [
+        Score(date: Calendar.current.date(byAdding: .day, value: 0, to: Date())!, value: 21),
+        Score(date: Calendar.current.date(byAdding: .day, value: 2, to: Date())!, value: 1111),
+        Score(date: Calendar.current.date(byAdding: .day, value: 4, to: Date())!, value: 233),
+        Score(date: Calendar.current.date(byAdding: .day, value: 5, to: Date())!, value: 2111),
+        Score(date: Calendar.current.date(byAdding: .day, value: 8, to: Date())!, value: 444)
+    ]
+}
+
+// A lot about charts can be found in documentation, for samples search for keyword `Mark`
+struct ChartsScreen: View {
+    var feature: Feature
+    @StateObject var viewModel = ChartsViewModel()
     
     var body: some View {
         VStack {
@@ -48,28 +75,10 @@ struct ChartsScreen: View {
                 .multilineTextAlignment(.center)
             Spacer()
             
-            ScrollView {
-                barChart
-                
-            }
-        }
-        .navigationTitle(feature.title)
-        .navigationBarTitleDisplayMode(.inline)
-    }
-    
-    var barChart: some View {
-        VStack {
-            Chart(team) {
-                BarMark(x: .value("Developer Name", $0.name),
-                        y: .value("Developer Seniority", $0.seniority))
-                .foregroundStyle(.orange.gradient)
-            }
-            .frame(height: 400)
-            
             HStack {
                 Button {
                     withAnimation {
-                        team = team.sorted { $0.seniority < $1.seniority }
+                        viewModel.team = viewModel.team.sorted { $0.seniority < $1.seniority }
                     }
                 } label: {
                     Text("Sort")
@@ -81,7 +90,7 @@ struct ChartsScreen: View {
                 
                 Button {
                     withAnimation {
-                        team = team.shuffled()
+                        viewModel.team = viewModel.team.shuffled()
                     }
                 } label: {
                     Text("Shuffle")
@@ -91,7 +100,61 @@ struct ChartsScreen: View {
                         .cornerRadius(10)
                 }
             }
+            
+            ScrollView {
+                barChart
+                lineChart
+                areaChart
+            }
         }
+        .navigationTitle(feature.title)
+        .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    var lineChart: some View {
+        Chart {
+            ForEach(viewModel.scoresA) {
+                LineMark(x: .value("Date", $0.date),
+                         y: .value("Score", $0.value))
+                .foregroundStyle(.orange)
+                .interpolationMethod(.stepStart)
+            }
+//            This is not working as in documentation :/
+//            ForEach(viewModel.scoresB) {
+//                LineMark(x: .value("Date", $0.date),
+//                         y: .value("Score B", $0.value))
+//                .foregroundStyle(.red)
+//            }
+            
+            RuleMark(
+                y: .value("Mid Threshold", 1000)
+            )
+            .foregroundStyle(.green)
+            
+            RuleMark(
+                y: .value("Pro Threshold", 2000)
+            )
+            .foregroundStyle(.yellow)
+        }
+        .frame(height: 400)
+    }
+    
+    var barChart: some View {
+        Chart(viewModel.team) {
+            BarMark(x: .value("Developer Name", $0.name),
+                    y: .value("Developer Seniority", $0.seniority))
+            .foregroundStyle(.orange.gradient)
+        }
+        .frame(height: 400)
+    }
+    
+    var areaChart: some View {
+        Chart(viewModel.scoresA) {
+            AreaMark(x: .value("Date", $0.date),
+                     y: .value("Score", $0.value))
+            .foregroundStyle(.green.gradient)
+        }
+        .frame(height: 400)
     }
 }
 
