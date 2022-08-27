@@ -11,6 +11,8 @@
 		A072717828BA4B1300D354DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072717728BA4B1300D354DC /* ContentView.swift */; };
 		A072717A28BA4B1400D354DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A072717928BA4B1400D354DC /* Assets.xcassets */; };
 		A072717E28BA4B1400D354DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A072717D28BA4B1400D354DC /* Preview Assets.xcassets */; };
+		A072718628BA768900D354DC /* ChartsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718528BA768900D354DC /* ChartsScreen.swift */; };
+		A072718828BA779C00D354DC /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718728BA779C00D354DC /* FeatureCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A072717928BA4B1400D354DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A072717B28BA4B1400D354DC /* iOS16_SwiftUI_Showdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS16_SwiftUI_Showdown.entitlements; sourceTree = "<group>"; };
 		A072717D28BA4B1400D354DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A072718528BA768900D354DC /* ChartsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsScreen.swift; sourceTree = "<group>"; };
+		A072718728BA779C00D354DC /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				A072717528BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift */,
+				A072718528BA768900D354DC /* ChartsScreen.swift */,
 				A072717728BA4B1300D354DC /* ContentView.swift */,
 				A072717928BA4B1400D354DC /* Assets.xcassets */,
 				A072717B28BA4B1400D354DC /* iOS16_SwiftUI_Showdown.entitlements */,
 				A072717C28BA4B1400D354DC /* Preview Content */,
+				A072718728BA779C00D354DC /* FeatureCell.swift */,
 			);
 			path = "iOS16-SwiftUI-Showdown";
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A072718828BA779C00D354DC /* FeatureCell.swift in Sources */,
+				A072718628BA768900D354DC /* ChartsScreen.swift in Sources */,
 				A072717828BA4B1300D354DC /* ContentView.swift in Sources */,
 				A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */,
 			);
@@ -282,7 +290,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lstachnik.iOS16-SwiftUI-Showdown";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,7 +328,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lstachnik.iOS16-SwiftUI-Showdown";
 				PRODUCT_NAME = "$(TARGET_NAME)";
