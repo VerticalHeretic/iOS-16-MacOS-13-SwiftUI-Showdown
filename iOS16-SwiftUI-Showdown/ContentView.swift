@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-enum FeatureType: String {
+enum FeatureType: String, Decodable {
     case charts
     case gauge
 }
 
-struct Feature: Identifiable, Hashable {
-    let id: UUID = UUID()
+struct Feature: Identifiable, Hashable, Decodable {
+    var id: String = UUID().uuidString
     let title: String
     let description: String
     let type: FeatureType
@@ -57,6 +57,30 @@ struct ContentView: View {
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")
+                }
+                .onOpenURL { url in
+                    print("🚀 \(url)")
+                    
+                    guard let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else { return }
+                    let query = components.queryItems ?? []
+                    let host = components.host
+                    let scheme = components.scheme
+                    
+                    if scheme == "showdownRouting" && host == "feature" {
+                        var jsonQuery = query.map { "\"\($0.name)\":\"\($0.value ?? "")\"" }.joined(separator: ",")
+                        jsonQuery = "{\(jsonQuery)}"
+                        
+                        guard let jsonData = jsonQuery.data(using: .utf8) else {
+                           return
+                        }
+                        
+                        do {
+                            let feature = try JSONDecoder.shared.decode(Feature.self, from: jsonData)
+                            viewModel.showFeature(feature)
+                        } catch {
+                            print(error)
+                        }
+                    }
                 }
             }
         }

@@ -14,6 +14,7 @@
 		A072718628BA768900D354DC /* ChartsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718528BA768900D354DC /* ChartsScreen.swift */; };
 		A072718828BA779C00D354DC /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718728BA779C00D354DC /* FeatureCell.swift */; };
 		A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072718928BA8CAA00D354DC /* GaugeScreen.swift */; };
+		A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A072718528BA768900D354DC /* ChartsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsScreen.swift; sourceTree = "<group>"; };
 		A072718728BA779C00D354DC /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
 		A072718928BA8CAA00D354DC /* GaugeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeScreen.swift; sourceTree = "<group>"; };
+		A0FAA49F28BB43FE00F2C87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Singleton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		A072717428BA4B1300D354DC /* iOS16-SwiftUI-Showdown */ = {
 			isa = PBXGroup;
 			children = (
+				A0FAA49F28BB43FE00F2C87E /* Info.plist */,
 				A072717528BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift */,
 				A072718528BA768900D354DC /* ChartsScreen.swift */,
 				A072718928BA8CAA00D354DC /* GaugeScreen.swift */,
@@ -66,6 +70,7 @@
 				A072717B28BA4B1400D354DC /* iOS16_SwiftUI_Showdown.entitlements */,
 				A072717C28BA4B1400D354DC /* Preview Content */,
 				A072718728BA779C00D354DC /* FeatureCell.swift */,
+				A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */,
 			);
 			path = "iOS16-SwiftUI-Showdown";
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */,
 				A072718828BA779C00D354DC /* FeatureCell.swift in Sources */,
 				A072718628BA768900D354DC /* ChartsScreen.swift in Sources */,
 				A072717828BA4B1300D354DC /* ContentView.swift in Sources */,
@@ -277,10 +283,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS16-SwiftUI-Showdown/Preview Content\"";
-				DEVELOPMENT_TEAM = P2B2T5SL25;
+				DEVELOPMENT_TEAM = 7KN966P9LP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS16-SwiftUI-Showdown/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,10 +322,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS16-SwiftUI-Showdown/Preview Content\"";
-				DEVELOPMENT_TEAM = P2B2T5SL25;
+				DEVELOPMENT_TEAM = 7KN966P9LP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS16-SwiftUI-Showdown/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
