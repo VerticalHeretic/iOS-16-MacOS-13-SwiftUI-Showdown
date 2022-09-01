@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
     
@@ -27,6 +25,8 @@ struct ContentView: View {
                             ChartsScreen(feature: feature, navigationPath: $viewModel.navigationPath)
                         case .gauge:
                             GaugeScreen(feature: feature)
+                        case .gradientsAndShadows:
+                            GradientsAndShadowsScreen(feature: feature)
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")

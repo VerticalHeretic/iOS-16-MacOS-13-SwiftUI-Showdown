@@ -16,7 +16,10 @@ final class ContentViewModel: ObservableObject {
                 type: .charts),
         Feature(title: "Gauge 🔜",
                 description: "SwiftUI introduces a new view called Gauge for displaying progress. In the most basic form, a gauge has a default range from 0 to 1.",
-                type: .gauge)
+                type: .gauge),
+        Feature(title: "Gradients and Shadows 👤",
+                description: "Gradients and shadows come with minor tweaks and enchances",
+                type: .gradientsAndShadows)
     ]
     
     func showFeature(_ feature: Feature) {

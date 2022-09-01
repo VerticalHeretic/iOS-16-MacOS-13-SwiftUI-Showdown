@@ -15,5 +15,5 @@ This is just a sample showdown App of all new iOS and MacOS features added withi
 - [ ] Table View for iPadOS and MacOS (it works on iOS too but shows only one column)
 - [ ] Expandable TextField
 - [ ] ViewThatFits
-- [ ] Gradients and Shadows Improvements
+- [x] Gradients and Shadows Improvements
 - [ ] List Improvements

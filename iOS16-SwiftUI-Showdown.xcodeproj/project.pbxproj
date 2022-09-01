@@ -17,6 +17,7 @@
 		A0C81B5D28C07D5A00F46E1D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C81B5C28C07D5A00F46E1D /* ContentViewModel.swift */; };
 		A0C81B6028C07D7500F46E1D /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C81B5F28C07D7500F46E1D /* Feature.swift */; };
 		A0C81B6228C07D8700F46E1D /* FeatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C81B6128C07D8700F46E1D /* FeatureType.swift */; };
+		A0C81B6628C07E1000F46E1D /* GradientsAndShadowsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C81B6528C07E1000F46E1D /* GradientsAndShadowsScreen.swift */; };
 		A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		A0C81B5C28C07D5A00F46E1D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		A0C81B5F28C07D7500F46E1D /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		A0C81B6128C07D8700F46E1D /* FeatureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureType.swift; sourceTree = "<group>"; };
+		A0C81B6528C07E1000F46E1D /* GradientsAndShadowsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsAndShadowsScreen.swift; sourceTree = "<group>"; };
 		A0FAA49F28BB43FE00F2C87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Singleton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 			children = (
 				A072718528BA768900D354DC /* ChartsScreen.swift */,
 				A072718928BA8CAA00D354DC /* GaugeScreen.swift */,
+				A0C81B6528C07E1000F46E1D /* GradientsAndShadowsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */,
+				A0C81B6628C07E1000F46E1D /* GradientsAndShadowsScreen.swift in Sources */,
 				A072718828BA779C00D354DC /* FeatureCell.swift in Sources */,
 				A072718628BA768900D354DC /* ChartsScreen.swift in Sources */,
 				A0C81B5D28C07D5A00F46E1D /* ContentViewModel.swift in Sources */,

@@ -10,4 +10,5 @@ import Foundation
 enum FeatureType: String, Decodable {
     case charts
     case gauge
+    case gradientsAndShadows
 }
