@@ -65,6 +65,7 @@ final class ChartsViewModel: ObservableObject {
 // A lot about charts can be found in documentation, for samples search for keyword `Mark`
 struct ChartsScreen: View {
     var feature: Feature
+    @Binding var navigationPath: NavigationPath
     @StateObject var viewModel = ChartsViewModel()
 
     var body: some View {
@@ -73,8 +74,12 @@ struct ChartsScreen: View {
                 .font(.footnote)
                 .padding()
                 .multilineTextAlignment(.center)
+                .onTapGesture {
+                    navigationPath.removeLast(navigationPath.count)
+                }
+            
             Spacer()
-
+            
             HStack {
                 Button {
                     withAnimation {
@@ -159,9 +164,12 @@ struct ChartsScreen: View {
 }
 
 struct ChartsScreen_Previews: PreviewProvider {
+    @State static var path = NavigationPath()
+    
     static var previews: some View {
         ChartsScreen(feature: Feature(title: "Charts",
                                       description: "Those are charts which are very crucial part of most technical aplications",
-                                      type: .charts))
+                                      type: .charts),
+                     navigationPath: $path)
     }
 }

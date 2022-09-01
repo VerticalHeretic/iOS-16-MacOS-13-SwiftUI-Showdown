@@ -32,6 +32,7 @@ struct FeatureCell: View {
         }
         .padding()
         .onTapGesture {
+            print("Gówno dupa chuj")
             onTap()
         }
     }
