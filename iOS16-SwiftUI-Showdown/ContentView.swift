@@ -29,6 +29,8 @@ struct ContentView: View {
                             GradientsAndShadowsScreen(feature: feature)
                         case .share:
                             ShareLinkScreen(feature: feature)
+                        case .textField:
+                            TextFieldScreen(feature: feature)
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")

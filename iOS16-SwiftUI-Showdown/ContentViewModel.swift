@@ -25,7 +25,10 @@ In the most basic form, a gauge has a default range from 0 to 1.
                 type: .gradientsAndShadows),
         Feature(title: "ShareLink 🛫",
                 description: "Finally native ShareLink coming to iOS16, no need for UIKit wrapper from now on",
-                type: .share)
+                type: .share),
+        Feature(title: "Expandable TextField 💬",
+                description: "Some minor and major improvements to the textField",
+                type: .textField)
     ]
 
     func showFeature(_ feature: Feature) {

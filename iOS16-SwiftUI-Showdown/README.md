@@ -11,7 +11,7 @@ This is just a sample showdown App of all new iOS and MacOS features added withi
 - [ ] Any Layout and Layout Protocol
 - [ ] MultiDatePicker
 - [ ] Resizable Bottom Sheet
-- [ ] Share Link
+- [x] Share Link
 - [ ] Table View for iPadOS and MacOS (it works on iOS too but shows only one column)
 - [ ] Expandable TextField
 - [ ] ViewThatFits

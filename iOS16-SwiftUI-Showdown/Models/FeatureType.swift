@@ -12,4 +12,5 @@ enum FeatureType: String, Decodable {
     case gauge
     case gradientsAndShadows
     case share
+    case textField
 }

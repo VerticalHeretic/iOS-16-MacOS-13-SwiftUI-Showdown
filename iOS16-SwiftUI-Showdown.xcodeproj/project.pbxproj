@@ -19,6 +19,8 @@
 		A0C81B6228C07D8700F46E1D /* FeatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C81B6128C07D8700F46E1D /* FeatureType.swift */; };
 		A0C81B6628C07E1000F46E1D /* GradientsAndShadowsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C81B6528C07E1000F46E1D /* GradientsAndShadowsScreen.swift */; };
 		A0EE251D28C4958200DA5698 /* ShareLinkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE251C28C4958200DA5698 /* ShareLinkScreen.swift */; };
+		A0EE252028C49E6B00DA5698 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0EE251F28C49E6B00DA5698 /* README.md */; };
+		A0EE252228C49F3F00DA5698 /* TextFieldScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */; };
 		A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		A0C81B6128C07D8700F46E1D /* FeatureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureType.swift; sourceTree = "<group>"; };
 		A0C81B6528C07E1000F46E1D /* GradientsAndShadowsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsAndShadowsScreen.swift; sourceTree = "<group>"; };
 		A0EE251C28C4958200DA5698 /* ShareLinkScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkScreen.swift; sourceTree = "<group>"; };
+		A0EE251F28C49E6B00DA5698 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "iOS16-SwiftUI-Showdown/README.md"; sourceTree = SOURCE_ROOT; };
+		A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldScreen.swift; sourceTree = "<group>"; };
 		A0FAA49F28BB43FE00F2C87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Singleton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +85,7 @@
 				A0C81B5C28C07D5A00F46E1D /* ContentViewModel.swift */,
 				A072717928BA4B1400D354DC /* Assets.xcassets */,
 				A072717B28BA4B1400D354DC /* iOS16_SwiftUI_Showdown.entitlements */,
+				A0EE251F28C49E6B00DA5698 /* README.md */,
 				A072717C28BA4B1400D354DC /* Preview Content */,
 			);
 			path = "iOS16-SwiftUI-Showdown";
@@ -117,6 +122,7 @@
 				A072718928BA8CAA00D354DC /* GaugeScreen.swift */,
 				A0C81B6528C07E1000F46E1D /* GradientsAndShadowsScreen.swift */,
 				A0EE251C28C4958200DA5698 /* ShareLinkScreen.swift */,
+				A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0EE252028C49E6B00DA5698 /* README.md in Resources */,
 				A072717E28BA4B1400D354DC /* Preview Assets.xcassets in Resources */,
 				A072717A28BA4B1400D354DC /* Assets.xcassets in Resources */,
 			);
@@ -224,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */,
+				A0EE252228C49F3F00DA5698 /* TextFieldScreen.swift in Sources */,
 				A0C81B6628C07E1000F46E1D /* GradientsAndShadowsScreen.swift in Sources */,
 				A0EE251D28C4958200DA5698 /* ShareLinkScreen.swift in Sources */,
 				A072718828BA779C00D354DC /* FeatureCell.swift in Sources */,
