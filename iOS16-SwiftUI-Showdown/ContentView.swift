@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
-    
+
     var body: some View {
         NavigationStack(path: $viewModel.navigationPath) {
             ScrollView {
@@ -35,20 +35,20 @@ struct ContentView: View {
                 }
                 .onOpenURL { url in
                     print("🚀 \(url)")
-                    
+
                     guard let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else { return }
                     let query = components.queryItems ?? []
                     let host = components.host
                     let scheme = components.scheme
-                    
+
                     if scheme == "showdownRouting" && host == "feature" {
                         var jsonQuery = query.map { "\"\($0.name)\":\"\($0.value ?? "")\"" }.joined(separator: ",")
                         jsonQuery = "{\(jsonQuery)}"
-                        
+
                         guard let jsonData = jsonQuery.data(using: .utf8) else {
                             return
                         }
-                        
+
                         do {
                             let feature = try JSONDecoder.shared.decode(Feature.self, from: jsonData)
                             viewModel.showFeature(feature)

@@ -52,7 +52,8 @@ struct GaugeScreen: View {
                 Text(progress.formatted(.percent))
                     .font(.footnote)
             }
-            .scaleEffect(2.0) // To make the circular ones bigger you need to use scaleEffect and for the linear frame will be sufficient
+            .scaleEffect(2.0)
+            // To make the circular ones bigger you need to use scaleEffect and for the linear frame will be sufficient
             .padding()
             .gaugeStyle(.accessoryCircular)
             .tint(.indigo)
@@ -87,7 +88,10 @@ struct GaugeScreen: View {
 struct GaugeScreen_Previews: PreviewProvider {
     static var previews: some View {
         GaugeScreen(feature: Feature(title: "Gauge 🔜",
-                                      description: "SwiftUI introduces a new view called Gauge for displaying progress. In the most basic form, a gauge has a default range from 0 to 1.",
+                                      description: """
+SwiftUI introduces a new view called Gauge for displaying progress.
+In the most basic form, a gauge has a default range from 0 to 1.
+""",
                                       type: .gauge))
     }
 }

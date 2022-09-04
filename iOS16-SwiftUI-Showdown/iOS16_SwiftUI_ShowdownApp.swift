@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// swiftlint:disable type_name
 @main
 struct iOS16_SwiftUI_ShowdownApp: App {
     var body: some Scene {

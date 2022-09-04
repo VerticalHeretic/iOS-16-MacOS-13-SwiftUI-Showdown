@@ -10,7 +10,7 @@ import SwiftUI
 struct GradientsAndShadowsScreen: View {
     let feature: Feature
     let colors: [Color] = [.blue, .cyan, .green, .yellow, .orange, .red, .purple]
-    
+
     var body: some View {
         ScrollView {
             VStack {
@@ -18,7 +18,7 @@ struct GradientsAndShadowsScreen: View {
                     .font(.footnote)
                     .padding()
                     .multilineTextAlignment(.center)
-                
+
                 ForEach(Array(zip(colors.indices, colors)), id: \.0) { index, color in
                     if index % 2 == 0 {
                         Rectangle()
@@ -40,7 +40,9 @@ struct GradientsAndShadowsScreen: View {
 struct GradientsAndShadowsScreen_Previews: PreviewProvider {
     static var previews: some View {
         GradientsAndShadowsScreen(feature: Feature(title: "Gradients and Shadows",
-                                                   description: "Gradients and shadows come with minor tweaks and enchances",
+                                                   description: """
+Gradients and shadows come with minor tweaks and enchances
+""",
                                                    type: .gradientsAndShadows))
     }
 }

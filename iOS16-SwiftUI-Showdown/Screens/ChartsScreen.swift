@@ -77,9 +77,9 @@ struct ChartsScreen: View {
                 .onTapGesture {
                     navigationPath.removeLast(navigationPath.count)
                 }
-            
+
             Spacer()
-            
+
             HStack {
                 Button {
                     withAnimation {
@@ -165,10 +165,11 @@ struct ChartsScreen: View {
 
 struct ChartsScreen_Previews: PreviewProvider {
     @State static var path = NavigationPath()
-    
     static var previews: some View {
         ChartsScreen(feature: Feature(title: "Charts",
-                                      description: "Those are charts which are very crucial part of most technical aplications",
+                                      description: """
+Those are charts which are very crucial part of most technical aplications
+""",
                                       type: .charts),
                      navigationPath: $path)
     }

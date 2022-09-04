@@ -11,7 +11,7 @@ struct Progress: Transferable {
     static var transferRepresentation: some TransferRepresentation {
         ProxyRepresentation(exporting: \.image)
     }
-    
+
     public var image: Image
     public var value: Double
 }
@@ -20,14 +20,14 @@ struct ShareLinkScreen: View {
     var feature: Feature
     @State var progress: Progress = Progress(image: Image(systemName: "timer"), value: 0.0)
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-          
+
     var body: some View {
         VStack {
             Text(feature.description)
                 .font(.footnote)
                 .padding()
                 .multilineTextAlignment(.center)
-           
+
             ShareLink(item: progress,
                       preview: SharePreview(String(progress.value),
                                             image: progress.image),
@@ -55,9 +55,9 @@ struct ShareLinkScreen: View {
                     }
                 }
             }
-            
+
             ShareLink("Funny link", item: URL(string: "https://www.youtube.com/watch?v=dQw4w9WgXcQ")!)
-            
+
             Spacer()
         }
         .navigationTitle(feature.title)
