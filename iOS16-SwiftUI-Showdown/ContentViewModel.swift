@@ -37,7 +37,10 @@ The Grid view, however, makes it a lot easier.
                 type: .grid),
         Feature(title: "View That Fits 🍕",
                 description: "It's a layout feature that gives you an ability to analyse the space and present best view layout for it",
-                type: .viewThatFits)
+                type: .viewThatFits),
+        Feature(title: "AnyLayout and Layout Protocol 🛌",
+                description: "The new version of SwiftUI provides AnyLayout and the Layout protocol for developers to create customized and complex layouts.",
+                type: .layout)
         
     ]
 

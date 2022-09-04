@@ -12,8 +12,11 @@ struct ViewThatFitsScreen: View {
     @State var height: Double = 500
     
     var body: some View {
-        
         VStack {
+            Text(feature.description)
+                .font(.footnote)
+                .padding()
+            
             Image("pizza")
                 .resizable()
                 .scaledToFill()
@@ -29,6 +32,9 @@ struct ViewThatFitsScreen: View {
                         }
                     }
                 }
+            
+            Text("Photo by Shourav Sheikh from Unslpash")
+                .font(.footnote)
             
             ViewThatFits {
                 VStack {
@@ -72,6 +78,7 @@ struct ViewThatFitsScreen: View {
                 .frame(maxHeight: 100)
             }
         }
+        .navigationTitle(feature.title)
     }
 }
 

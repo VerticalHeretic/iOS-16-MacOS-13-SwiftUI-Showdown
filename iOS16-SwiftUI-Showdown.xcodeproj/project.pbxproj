@@ -22,6 +22,7 @@
 		A0EE252228C49F3F00DA5698 /* TextFieldScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */; };
 		A0EE252428C4E78600DA5698 /* GridScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252328C4E78600DA5698 /* GridScreen.swift */; };
 		A0EE252628C4F07800DA5698 /* ViewThatFitsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */; };
+		A0EE252828C4F3D700DA5698 /* LayoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252728C4F3D700DA5698 /* LayoutScreen.swift */; };
 		A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldScreen.swift; sourceTree = "<group>"; };
 		A0EE252328C4E78600DA5698 /* GridScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScreen.swift; sourceTree = "<group>"; };
 		A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScreen.swift; sourceTree = "<group>"; };
+		A0EE252728C4F3D700DA5698 /* LayoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutScreen.swift; sourceTree = "<group>"; };
 		A0FAA49F28BB43FE00F2C87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Singleton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */,
 				A0EE252328C4E78600DA5698 /* GridScreen.swift */,
 				A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */,
+				A0EE252728C4F3D700DA5698 /* LayoutScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				A072717828BA4B1300D354DC /* ContentView.swift in Sources */,
 				A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */,
 				A0C81B6228C07D8700F46E1D /* FeatureType.swift in Sources */,
+				A0EE252828C4F3D700DA5698 /* LayoutScreen.swift in Sources */,
 				A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */,
 				A0EE252628C4F07800DA5698 /* ViewThatFitsScreen.swift in Sources */,
 			);
