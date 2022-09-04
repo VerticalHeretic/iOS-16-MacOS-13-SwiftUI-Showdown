@@ -18,7 +18,7 @@ struct Progress: Transferable {
 
 struct ShareLinkScreen: View {
     var feature: Feature
-    @State var progress: Progress = Progress(image: Image(systemName: "timer"), value: 0.0)
+    @State var progress = Progress(image: Image(systemName: "timer"), value: 0.0)
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
@@ -61,7 +61,6 @@ struct ShareLinkScreen: View {
             Spacer()
         }
         .navigationTitle(feature.title)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

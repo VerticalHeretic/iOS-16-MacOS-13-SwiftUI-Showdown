@@ -9,13 +9,13 @@ import SwiftUI
 import Charts
 
 struct Developer: Identifiable {
-    let id: UUID = UUID()
+    let id = UUID()
     let name: String
     let seniority: Double
 }
 
 struct Score: Identifiable {
-    let id: UUID = UUID()
+    let id = UUID()
     let date: Date
     let value: Double
 }
@@ -113,7 +113,6 @@ struct ChartsScreen: View {
             }
         }
         .navigationTitle(feature.title)
-        .navigationBarTitleDisplayMode(.inline)
     }
 
     var lineChart: some View {

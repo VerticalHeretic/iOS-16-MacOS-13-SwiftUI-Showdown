@@ -28,7 +28,13 @@ In the most basic form, a gauge has a default range from 0 to 1.
                 type: .share),
         Feature(title: "Expandable TextField 💬",
                 description: "Some minor and major improvements to the textField",
-                type: .textField)
+                type: .textField),
+        Feature(title: "Grid Layout 📱", description: """
+SwiftUI 4.0 introduces a new Grid API for composing grid-based layout.
+You can arrange the same layout by using VStack and HStact.
+The Grid view, however, makes it a lot easier.
+""",
+                type: .grid)
     ]
 
     func showFeature(_ feature: Feature) {

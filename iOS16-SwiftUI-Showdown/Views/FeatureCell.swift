@@ -14,7 +14,7 @@ struct FeatureCell: View {
     var body: some View {
         VStack {
             HStack {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 8) {
                     Text(feature.title)
                         .font(.title)
                     Text(feature.description)
@@ -32,7 +32,6 @@ struct FeatureCell: View {
         }
         .padding()
         .onTapGesture {
-            print("Gówno dupa chuj")
             onTap()
         }
     }

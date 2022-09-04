@@ -33,7 +33,6 @@ struct GradientsAndShadowsScreen: View {
             }
         }
         .navigationTitle(feature.title)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

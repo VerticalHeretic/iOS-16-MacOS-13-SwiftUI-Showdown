@@ -31,6 +31,8 @@ struct ContentView: View {
                             ShareLinkScreen(feature: feature)
                         case .textField:
                             TextFieldScreen(feature: feature)
+                        case .grid:
+                            GridScreen(feature: feature)
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")

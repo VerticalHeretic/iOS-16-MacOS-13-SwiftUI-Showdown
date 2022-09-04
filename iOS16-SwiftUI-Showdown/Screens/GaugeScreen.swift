@@ -79,9 +79,7 @@ struct GaugeScreen: View {
                 }
             }
         }
-
         .navigationTitle(feature.title)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
