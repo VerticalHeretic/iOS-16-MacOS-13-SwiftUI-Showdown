@@ -8,7 +8,7 @@ This is just a sample showdown App of all new iOS and MacOS features added withi
 - [x] Charts API basic sample
 - [x] Gauge View for progress showing API with all 4 available setting
 - [x] Grid Layout
-- [ ] Any Layout and Layout Protocol
+- [x] Any Layout and Layout Protocol
 - [ ] MultiDatePicker
 - [ ] Resizable Bottom Sheet
 - [x] Share Link
