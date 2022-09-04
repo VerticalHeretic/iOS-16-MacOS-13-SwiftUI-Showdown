@@ -22,6 +22,7 @@
 		A0EE252028C49E6B00DA5698 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0EE251F28C49E6B00DA5698 /* README.md */; };
 		A0EE252228C49F3F00DA5698 /* TextFieldScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */; };
 		A0EE252428C4E78600DA5698 /* GridScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252328C4E78600DA5698 /* GridScreen.swift */; };
+		A0EE252628C4F07800DA5698 /* ViewThatFitsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */; };
 		A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		A0EE251F28C49E6B00DA5698 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "iOS16-SwiftUI-Showdown/README.md"; sourceTree = SOURCE_ROOT; };
 		A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldScreen.swift; sourceTree = "<group>"; };
 		A0EE252328C4E78600DA5698 /* GridScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScreen.swift; sourceTree = "<group>"; };
+		A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScreen.swift; sourceTree = "<group>"; };
 		A0FAA49F28BB43FE00F2C87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Singleton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				A0EE251C28C4958200DA5698 /* ShareLinkScreen.swift */,
 				A0EE252128C49F3F00DA5698 /* TextFieldScreen.swift */,
 				A0EE252328C4E78600DA5698 /* GridScreen.swift */,
+				A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */,
 				A0C81B6228C07D8700F46E1D /* FeatureType.swift in Sources */,
 				A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */,
+				A0EE252628C4F07800DA5698 /* ViewThatFitsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

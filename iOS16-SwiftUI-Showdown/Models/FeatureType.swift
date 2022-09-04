@@ -14,4 +14,5 @@ enum FeatureType: String, Decodable {
     case share
     case textField
     case grid
+    case viewThatFits
 }

@@ -34,7 +34,11 @@ SwiftUI 4.0 introduces a new Grid API for composing grid-based layout.
 You can arrange the same layout by using VStack and HStact.
 The Grid view, however, makes it a lot easier.
 """,
-                type: .grid)
+                type: .grid),
+        Feature(title: "View That Fits 🍕",
+                description: "It's a layout feature that gives you an ability to analyse the space and present best view layout for it",
+                type: .viewThatFits)
+        
     ]
 
     func showFeature(_ feature: Feature) {

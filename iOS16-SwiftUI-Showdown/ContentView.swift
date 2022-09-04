@@ -33,6 +33,8 @@ struct ContentView: View {
                             TextFieldScreen(feature: feature)
                         case .grid:
                             GridScreen(feature: feature)
+                        case .viewThatFits:
+                           ViewThatFitsScreen(feature: feature)
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")
