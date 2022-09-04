@@ -19,7 +19,10 @@ final class ContentViewModel: ObservableObject {
                 type: .gauge),
         Feature(title: "Gradients and Shadows 👤",
                 description: "Gradients and shadows come with minor tweaks and enchances",
-                type: .gradientsAndShadows)
+                type: .gradientsAndShadows),
+        Feature(title: "ShareLink 🛫",
+                description: "Finally native ShareLink coming to iOS16, no need for UIKit wrapper from now on",
+                type: .share)
     ]
     
     func showFeature(_ feature: Feature) {

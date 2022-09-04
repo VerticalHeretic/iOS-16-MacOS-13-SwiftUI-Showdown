@@ -14,6 +14,11 @@ struct GradientsAndShadowsScreen: View {
     var body: some View {
         ScrollView {
             VStack {
+                Text(feature.description)
+                    .font(.footnote)
+                    .padding()
+                    .multilineTextAlignment(.center)
+                
                 ForEach(Array(zip(colors.indices, colors)), id: \.0) { index, color in
                     if index % 2 == 0 {
                         Rectangle()
@@ -27,6 +32,8 @@ struct GradientsAndShadowsScreen: View {
                 }
             }
         }
+        .navigationTitle(feature.title)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
