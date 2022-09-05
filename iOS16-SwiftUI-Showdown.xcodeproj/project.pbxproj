@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A04D1E3528C5E7DD005C9F2A /* MultidatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D1E3428C5E7DD005C9F2A /* MultidatePickerScreen.swift */; };
 		A04D1E3728C5F460005C9F2A /* BottomSheetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D1E3628C5F460005C9F2A /* BottomSheetScreen.swift */; };
+		A04D1E3928C60839005C9F2A /* TableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D1E3828C60839005C9F2A /* TableScreen.swift */; };
+		A04D1E3B28C60FAE005C9F2A /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D1E3A28C60FAE005C9F2A /* ListScreen.swift */; };
 		A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072717528BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift */; };
 		A072717828BA4B1300D354DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072717728BA4B1300D354DC /* ContentView.swift */; };
 		A072717A28BA4B1400D354DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A072717928BA4B1400D354DC /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		A04D1E3428C5E7DD005C9F2A /* MultidatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultidatePickerScreen.swift; sourceTree = "<group>"; };
 		A04D1E3628C5F460005C9F2A /* BottomSheetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetScreen.swift; sourceTree = "<group>"; };
+		A04D1E3828C60839005C9F2A /* TableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScreen.swift; sourceTree = "<group>"; };
+		A04D1E3A28C60FAE005C9F2A /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
 		A072717228BA4B1300D354DC /* iOS16-SwiftUI-Showdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS16-SwiftUI-Showdown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A072717528BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS16_SwiftUI_ShowdownApp.swift; sourceTree = "<group>"; };
 		A072717728BA4B1300D354DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				A0EE252728C4F3D700DA5698 /* LayoutScreen.swift */,
 				A04D1E3428C5E7DD005C9F2A /* MultidatePickerScreen.swift */,
 				A04D1E3628C5F460005C9F2A /* BottomSheetScreen.swift */,
+				A04D1E3828C60839005C9F2A /* TableScreen.swift */,
+				A04D1E3A28C60FAE005C9F2A /* ListScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -247,8 +253,10 @@
 				A0EE251D28C4958200DA5698 /* ShareLinkScreen.swift in Sources */,
 				A072718828BA779C00D354DC /* FeatureCell.swift in Sources */,
 				A0EE252428C4E78600DA5698 /* GridScreen.swift in Sources */,
+				A04D1E3928C60839005C9F2A /* TableScreen.swift in Sources */,
 				A072718628BA768900D354DC /* ChartsScreen.swift in Sources */,
 				A0C81B5D28C07D5A00F46E1D /* ContentViewModel.swift in Sources */,
+				A04D1E3B28C60FAE005C9F2A /* ListScreen.swift in Sources */,
 				A0C81B6028C07D7500F46E1D /* Feature.swift in Sources */,
 				A072717828BA4B1300D354DC /* ContentView.swift in Sources */,
 				A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */,

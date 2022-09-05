@@ -14,7 +14,7 @@ You are facing repository with all new fresh features coming out with iOS16 and 
 - [x] MultiDatePicker
 - [x] Resizable Bottom Sheet
 - [x] Share Link
-- [ ] Table View for iPadOS and MacOS (it works on iOS too but shows only one column)
+- [x] Table View for iPadOS and MacOS (it works on iOS too but shows only one column)
 - [x] Expandable TextField
 - [x] ViewThatFits
 - [x] Gradients and Shadows Improvements

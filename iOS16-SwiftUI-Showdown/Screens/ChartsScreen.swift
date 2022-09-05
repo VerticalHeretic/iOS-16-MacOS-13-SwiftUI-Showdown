@@ -12,6 +12,22 @@ struct Developer: Identifiable {
     let id = UUID()
     let name: String
     let seniority: Double
+    
+    var seniorityLabel: String {
+        if seniority > 6 {
+            return "Senior iOS Developer 🚀"
+        } else if seniority > 2 {
+            return "Mid iOS Developer 🍎"
+        } else if seniority > 0.5 {
+            return "Junior iOS Developer 💾"
+        } else {
+            return "iOS Developer Intern 📚"
+        }
+    }
+    
+    var seniorityString: String {
+        String(seniority.rounded())
+    }
 }
 
 struct Score: Identifiable {
@@ -21,6 +37,7 @@ struct Score: Identifiable {
 }
 
 final class ChartsViewModel: ObservableObject {
+    
     @Published var team: [Developer] = [
         Developer(name: "Łukasz", seniority: 2.5),
         Developer(name: "Wiktor", seniority: 3.5),

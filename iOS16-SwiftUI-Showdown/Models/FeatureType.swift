@@ -18,4 +18,6 @@ enum FeatureType: String, Decodable {
     case layout
     case datePicker
     case bottomSheet
+    case table
+    case list
 }

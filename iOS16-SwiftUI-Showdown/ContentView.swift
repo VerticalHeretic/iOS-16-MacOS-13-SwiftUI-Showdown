@@ -41,6 +41,10 @@ struct ContentView: View {
                             MultidatePickerScreen(feature: feature)
                         case .bottomSheet:
                             BottomSheetScreen(feature: feature)
+                        case .table:
+                            TableScreen(feature: feature)
+                        case .list:
+                            
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")

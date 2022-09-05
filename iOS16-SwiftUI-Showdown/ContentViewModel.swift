@@ -50,7 +50,10 @@ The new version of SwiftUI provides AnyLayout and the Layout protocol for develo
                 description: """
 From iOS16+ we have ability to create bottoms sheets with custom sizes and control they appearance programmatically
 """,
-                type: .bottomSheet)
+                type: .bottomSheet),
+        Feature(title: "Table ➕",
+                description: "Table implementation working great on iPad and MacoS",
+                type: .table)
     ]
 
     func showFeature(_ feature: Feature) {

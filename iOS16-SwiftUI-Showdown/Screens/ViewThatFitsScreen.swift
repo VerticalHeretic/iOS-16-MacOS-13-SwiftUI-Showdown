@@ -24,7 +24,7 @@ struct ViewThatFitsScreen: View {
                 .onTapGesture {
                     if height == 500 {
                         withAnimation {
-                            height = 600
+                            height = 200
                         }
                     } else {
                         withAnimation {
@@ -33,8 +33,9 @@ struct ViewThatFitsScreen: View {
                     }
                 }
             
-            Text("Photo by Shourav Sheikh from Unslpash")
+            Text("Photo by Shourav Sheikh from Unsplash")
                 .font(.footnote)
+                .foregroundColor(.gray)
             
             ViewThatFits {
                 VStack {
