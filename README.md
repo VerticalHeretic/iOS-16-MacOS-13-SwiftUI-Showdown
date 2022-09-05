@@ -1,8 +1,10 @@
-# iOS 16/MacOS 13 SwiftUI Showdown App
+# iOS16 - MacOS 13 SwiftUI Showdown
+
+![Hello There Hi There GIF](https://media.tenor.com/images/e884f717b42f78f0792d914117cd010d/tenor.gif)
 
 ## Description
 
-This is just a sample showdown App of all new iOS and MacOS features added withing SwiftUI framework. It shows:
+You are facing repository with all new fresh features coming out with iOS16 and MacOS13. Below you will find list of features that were added to the repo and which are still not added yet:
 
 - [x] Navigation Stack (with sample deeplink navigation)
 - [x] Charts API basic sample
@@ -10,7 +12,7 @@ This is just a sample showdown App of all new iOS and MacOS features added withi
 - [x] Grid Layout
 - [x] Any Layout and Layout Protocol
 - [x] MultiDatePicker
-- [ ] Resizable Bottom Sheet
+- [x] Resizable Bottom Sheet
 - [x] Share Link
 - [ ] Table View for iPadOS and MacOS (it works on iOS too but shows only one column)
 - [x] Expandable TextField

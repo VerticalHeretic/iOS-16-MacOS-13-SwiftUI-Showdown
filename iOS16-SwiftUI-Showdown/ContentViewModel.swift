@@ -12,7 +12,7 @@ final class ContentViewModel: ObservableObject {
 
     var features: [Feature] = [
         Feature(title: "Charts 📊",
-                description: "Use a chart to build expressive and dynamic data visualizations inside a SwiftUI view.",
+                description: "Use a chart to build expressive and dynamic data visualisations inside a SwiftUI view.",
                 type: .charts),
         Feature(title: "Gauge 🔜",
                 description: """
@@ -43,9 +43,14 @@ The Grid view, however, makes it a lot easier.
 The new version of SwiftUI provides AnyLayout and the Layout protocol for developers to create customized and complex layouts.
 """,
                 type: .layout),
-        Feature(title: "MulidatePicker 🌴",
+        Feature(title: "Muli Date Picker 🌴",
                 description: "Calendar picker view where you are able to choose multiple dates",
-                type: .datePicker)
+                type: .datePicker),
+        Feature(title: "⬇️ Bottom Sheet",
+                description: """
+From iOS16+ we have ability to create bottoms sheets with custom sizes and control they appearance programmatically
+""",
+                type: .bottomSheet)
     ]
 
     func showFeature(_ feature: Feature) {

@@ -17,4 +17,5 @@ enum FeatureType: String, Decodable {
     case viewThatFits
     case layout
     case datePicker
+    case bottomSheet
 }

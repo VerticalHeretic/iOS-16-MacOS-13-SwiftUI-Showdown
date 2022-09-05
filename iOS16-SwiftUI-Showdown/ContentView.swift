@@ -39,6 +39,8 @@ struct ContentView: View {
                             LayoutScreen(feature: feature)
                         case .datePicker:
                             MultidatePickerScreen(feature: feature)
+                        case .bottomSheet:
+                            BottomSheetScreen(feature: feature)
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")
