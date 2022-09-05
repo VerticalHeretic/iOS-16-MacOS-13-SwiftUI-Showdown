@@ -39,9 +39,13 @@ The Grid view, however, makes it a lot easier.
                 description: "It's a layout feature that gives you an ability to analyse the space and present best view layout for it",
                 type: .viewThatFits),
         Feature(title: "AnyLayout and Layout Protocol 🛌",
-                description: "The new version of SwiftUI provides AnyLayout and the Layout protocol for developers to create customized and complex layouts.",
-                type: .layout)
-        
+                description: """
+The new version of SwiftUI provides AnyLayout and the Layout protocol for developers to create customized and complex layouts.
+""",
+                type: .layout),
+        Feature(title: "MulidatePicker 🌴",
+                description: "Calendar picker view where you are able to choose multiple dates",
+                type: .datePicker)
     ]
 
     func showFeature(_ feature: Feature) {

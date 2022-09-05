@@ -9,7 +9,7 @@ This is just a sample showdown App of all new iOS and MacOS features added withi
 - [x] Gauge View for progress showing API with all 4 available setting
 - [x] Grid Layout
 - [x] Any Layout and Layout Protocol
-- [ ] MultiDatePicker
+- [x] MultiDatePicker
 - [ ] Resizable Bottom Sheet
 - [x] Share Link
 - [ ] Table View for iPadOS and MacOS (it works on iOS too but shows only one column)

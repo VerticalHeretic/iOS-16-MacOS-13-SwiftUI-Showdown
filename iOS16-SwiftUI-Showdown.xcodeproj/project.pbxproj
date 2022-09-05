@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04D1E3528C5E7DD005C9F2A /* MultidatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D1E3428C5E7DD005C9F2A /* MultidatePickerScreen.swift */; };
 		A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072717528BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift */; };
 		A072717828BA4B1300D354DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072717728BA4B1300D354DC /* ContentView.swift */; };
 		A072717A28BA4B1400D354DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A072717928BA4B1400D354DC /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A04D1E3428C5E7DD005C9F2A /* MultidatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultidatePickerScreen.swift; sourceTree = "<group>"; };
 		A072717228BA4B1300D354DC /* iOS16-SwiftUI-Showdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS16-SwiftUI-Showdown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A072717528BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS16_SwiftUI_ShowdownApp.swift; sourceTree = "<group>"; };
 		A072717728BA4B1300D354DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				A0EE252328C4E78600DA5698 /* GridScreen.swift */,
 				A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */,
 				A0EE252728C4F3D700DA5698 /* LayoutScreen.swift */,
+				A04D1E3428C5E7DD005C9F2A /* MultidatePickerScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */,
 				A0C81B6228C07D8700F46E1D /* FeatureType.swift in Sources */,
 				A0EE252828C4F3D700DA5698 /* LayoutScreen.swift in Sources */,
+				A04D1E3528C5E7DD005C9F2A /* MultidatePickerScreen.swift in Sources */,
 				A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */,
 				A0EE252628C4F07800DA5698 /* ViewThatFitsScreen.swift in Sources */,
 			);
