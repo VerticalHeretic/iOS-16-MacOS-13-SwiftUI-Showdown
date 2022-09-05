@@ -44,7 +44,7 @@ struct ContentView: View {
                         case .table:
                             TableScreen(feature: feature)
                         case .list:
-                            
+                            ListScreen()
                         }
                     }
                     .navigationTitle("iOS16 Features 🚀")
