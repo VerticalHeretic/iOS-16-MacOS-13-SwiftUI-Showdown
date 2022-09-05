@@ -7,10 +7,17 @@
 
 import SwiftUI
 
+struct CustomDetent: CustomPresentationDetent {
+    
+    static func height(in context: Context) -> CGFloat? {
+        return 210.37
+    }
+}
+
 struct BottomSheetScreen: View {
     var feature: Feature
     @State private var showSheet = false
-    private let detents: Set<PresentationDetent> = [.medium, .large, .fraction(0.69), .fraction(0.2)]
+    private let detents: Set<PresentationDetent> = [.medium, .large, .fraction(0.69), .fraction(0.2), .custom(CustomDetent.self) ]
     @State private var selectedDetent: PresentationDetent = .medium
     
     var body: some View {
