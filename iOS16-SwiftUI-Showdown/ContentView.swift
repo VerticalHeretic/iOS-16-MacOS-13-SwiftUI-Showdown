@@ -36,7 +36,11 @@ struct ContentView: View {
                         case .viewThatFits:
                            ViewThatFitsScreen(feature: feature)
                         case .layout:
-                            LayoutScreen(feature: feature)
+                            if feature.title == "Custom Layout ⚙️" {
+                                CustomComposeLayoutScreen()
+                            } else {
+                                LayoutScreen(feature: feature)
+                            }
                         case .datePicker:
                             MultidatePickerScreen(feature: feature)
                         case .bottomSheet:

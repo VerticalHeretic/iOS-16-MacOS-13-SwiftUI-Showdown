@@ -32,6 +32,7 @@ struct GaugeScreen: View {
                 Text(100.formatted(.percent))
                     .font(.footnote)
             }
+            .gaugeStyle(.linearCapacity)
             .padding()
 
             Gauge(value: progress) {
@@ -69,6 +70,17 @@ struct GaugeScreen: View {
             .gaugeStyle(.accessoryLinearCapacity)
             .tint(.pink)
 
+            Gauge(value: progress) {
+                Text("Status")
+                    .font(.footnote)
+            } currentValueLabel: {
+                Text(progress.formatted(.percent))
+                    .font(.footnote)
+            }
+            .padding()
+            .gaugeStyle(.accessoryLinear)
+            .tint(.pink)
+            
             Spacer()
 
         }

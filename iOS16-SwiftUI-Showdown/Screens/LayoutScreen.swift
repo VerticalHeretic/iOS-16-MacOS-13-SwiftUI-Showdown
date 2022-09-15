@@ -17,7 +17,7 @@ struct LayoutScreen: View {
         let layout2 = changeLayout ? AnyLayout(HStackLayout()) : AnyLayout(GridLayout())
         
         ScrollView {
-            VStack {
+            LazyVStack {
                 layout {
                     Image("apple2")
                         .resizable()

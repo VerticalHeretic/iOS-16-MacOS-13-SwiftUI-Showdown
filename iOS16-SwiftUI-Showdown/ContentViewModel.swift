@@ -53,7 +53,8 @@ From iOS16+ we have ability to create bottoms sheets with custom sizes and contr
                 type: .bottomSheet),
         Feature(title: "Table ➕",
                 description: "Table implementation working great on iPad and MacoS",
-                type: .table)
+                type: .table),
+        Feature(title: "Custom Layout ⚙️", description: "The custom layout made using Layout protocol", type: .layout)
     ]
 
     func showFeature(_ feature: Feature) {

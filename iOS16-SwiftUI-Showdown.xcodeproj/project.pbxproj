@@ -27,6 +27,10 @@
 		A0EE252428C4E78600DA5698 /* GridScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252328C4E78600DA5698 /* GridScreen.swift */; };
 		A0EE252628C4F07800DA5698 /* ViewThatFitsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */; };
 		A0EE252828C4F3D700DA5698 /* LayoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE252728C4F3D700DA5698 /* LayoutScreen.swift */; };
+		A0EFA71E28D20478007D0EBA /* CustomComposeLayoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFA71D28D20478007D0EBA /* CustomComposeLayoutScreen.swift */; };
+		A0EFA72128D20790007D0EBA /* EqualWidthHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFA72028D20790007D0EBA /* EqualWidthHStack.swift */; };
+		A0EFA72328D20E90007D0EBA /* EqualWidthVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFA72228D20E90007D0EBA /* EqualWidthVStack.swift */; };
+		A0EFA72528D2182A007D0EBA /* RadialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFA72428D2182A007D0EBA /* RadialLayout.swift */; };
 		A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		A0EE252328C4E78600DA5698 /* GridScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScreen.swift; sourceTree = "<group>"; };
 		A0EE252528C4F07800DA5698 /* ViewThatFitsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScreen.swift; sourceTree = "<group>"; };
 		A0EE252728C4F3D700DA5698 /* LayoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutScreen.swift; sourceTree = "<group>"; };
+		A0EFA71D28D20478007D0EBA /* CustomComposeLayoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComposeLayoutScreen.swift; sourceTree = "<group>"; };
+		A0EFA72028D20790007D0EBA /* EqualWidthHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthHStack.swift; sourceTree = "<group>"; };
+		A0EFA72228D20E90007D0EBA /* EqualWidthVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthVStack.swift; sourceTree = "<group>"; };
+		A0EFA72428D2182A007D0EBA /* RadialLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayout.swift; sourceTree = "<group>"; };
 		A0FAA49F28BB43FE00F2C87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A0FAA4A028BB4B7900F2C87E /* JSONDecoder+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Singleton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +95,7 @@
 		A072717428BA4B1300D354DC /* iOS16-SwiftUI-Showdown */ = {
 			isa = PBXGroup;
 			children = (
+				A0EFA71F28D20783007D0EBA /* Layouts */,
 				A0C81B5E28C07D6E00F46E1D /* Models */,
 				A0C81B5B28C07D4000F46E1D /* Screens */,
 				A0C81B5A28C07D3600F46E1D /* Helpers */,
@@ -141,6 +150,7 @@
 				A04D1E3628C5F460005C9F2A /* BottomSheetScreen.swift */,
 				A04D1E3828C60839005C9F2A /* TableScreen.swift */,
 				A04D1E3A28C60FAE005C9F2A /* ListScreen.swift */,
+				A0EFA71D28D20478007D0EBA /* CustomComposeLayoutScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -152,6 +162,16 @@
 				A0C81B6128C07D8700F46E1D /* FeatureType.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A0EFA71F28D20783007D0EBA /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				A0EFA72028D20790007D0EBA /* EqualWidthHStack.swift */,
+				A0EFA72228D20E90007D0EBA /* EqualWidthVStack.swift */,
+				A0EFA72428D2182A007D0EBA /* RadialLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,10 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0FAA4A128BB4B7900F2C87E /* JSONDecoder+Singleton.swift in Sources */,
+				A0EFA72328D20E90007D0EBA /* EqualWidthVStack.swift in Sources */,
 				A0EE252228C49F3F00DA5698 /* TextFieldScreen.swift in Sources */,
 				A0C81B6628C07E1000F46E1D /* GradientsAndShadowsScreen.swift in Sources */,
 				A0EE251D28C4958200DA5698 /* ShareLinkScreen.swift in Sources */,
 				A072718828BA779C00D354DC /* FeatureCell.swift in Sources */,
+				A0EFA71E28D20478007D0EBA /* CustomComposeLayoutScreen.swift in Sources */,
 				A0EE252428C4E78600DA5698 /* GridScreen.swift in Sources */,
 				A04D1E3928C60839005C9F2A /* TableScreen.swift in Sources */,
 				A072718628BA768900D354DC /* ChartsScreen.swift in Sources */,
@@ -261,10 +283,12 @@
 				A072717828BA4B1300D354DC /* ContentView.swift in Sources */,
 				A072718A28BA8CAA00D354DC /* GaugeScreen.swift in Sources */,
 				A04D1E3728C5F460005C9F2A /* BottomSheetScreen.swift in Sources */,
+				A0EFA72528D2182A007D0EBA /* RadialLayout.swift in Sources */,
 				A0C81B6228C07D8700F46E1D /* FeatureType.swift in Sources */,
 				A0EE252828C4F3D700DA5698 /* LayoutScreen.swift in Sources */,
 				A04D1E3528C5E7DD005C9F2A /* MultidatePickerScreen.swift in Sources */,
 				A072717628BA4B1300D354DC /* iOS16_SwiftUI_ShowdownApp.swift in Sources */,
+				A0EFA72128D20790007D0EBA /* EqualWidthHStack.swift in Sources */,
 				A0EE252628C4F07800DA5698 /* ViewThatFitsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
